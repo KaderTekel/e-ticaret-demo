@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>KaderTekel | Ödeme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Üst Bilgi -->
+    <header class="bg-dark text-white text-center py-3">
+        <h1 class="m-0">KaderTekel Store</h1>
+        <p class="mb-0">Bu bir demo sitedir. Sipariş alınmaz.</p>
+    </header>
+
+    <!-- Menü -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">KaderTekel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Sepet</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="checkout.html">Ödeme</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ödeme Formu -->
+    <main class="container py-5">
+        <h2>Ödeme Bilgileri</h2>
+        <p class="text-danger">Bu bir demo formdur. Gerçek bir ödeme işlemi gerçekleştirilmez.</p>
+
+        <form>
+            <div class="form-group">
+                <label for="adSoyad">Ad Soyad</label>
+                <input type="text" class="form-control" id="adSoyad" placeholder="Adınız Soyadınız">
+            </div>
+            <div class="form-group">
+                <label for="adres">Adres</label>
+                <input type="text" class="form-control" id="adres" placeholder="Adresiniz">
+            </div>
+            <div class="form-group">
+                <label for="kartNo">Kart Numarası</label>
+                <input type="text" class="form-control" id="kartNo" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="sonKullanma">Son Kullanma Tarihi</label>
+                    <input type="text" class="form-control" id="sonKullanma" placeholder="AA/YY">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="123">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" disabled>Ödemeyi Tamamla (Demo)</button>
+        </form>
+    </main>
+
+    <!-- Alt Bilgi -->
+    <footer class="text-center py-4 bg-light">
+        <p class="mb-0">© 2025 KaderTekel Demo. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
